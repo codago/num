@@ -1,15 +1,11 @@
-function sum(input){
-
- if (toString.call(input) !== "[object Array]")
-    return false;
-
+function sum(arguments){
             var total =  0;
-            for(var i=0;i<input.length;i++)
+            for(var i=0;i<arguments.length;i++)
               {
-                if(isNaN(input[i])){
-                continue;
+                if(isNaN(arguments[i])){
+                break;
                  }
-                  total += Number(input[i]);
+                  total += Number(arguments[i]);
                }
              return total;
             }
