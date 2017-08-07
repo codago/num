@@ -1,6 +1,17 @@
-function sum(d,e){
-    var result = d+e;
-    return result;
-}
+function sum(input){
 
-console.log(sum(5,6))
+ if (toString.call(input) !== "[object Array]")
+    return false;
+
+            var total =  0;
+            for(var i=0;i<input.length;i++)
+              {
+                if(isNaN(input[i])){
+                continue;
+                 }
+                  total += Number(input[i]);
+               }
+             return total;
+            }
+console.log(sum([1,2,7]));
+console.log(sum([5,6]));
