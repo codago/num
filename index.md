@@ -10,11 +10,13 @@ function sum(){
 }
 
 sum(1,2,7)
+sum(5,6)
 ```
 
 ## output
 ```javascript
 10
+11
 ```
 
 ## keyword
