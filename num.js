@@ -1,5 +1,9 @@
-var a,b,c;
-function sum(a, b ,c){
-  console.log(a + b + c);
+function sum(){
+  var result = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    result = result + arguments[i];
+  }
+  console.log(result);
 }
-sum(1, 2, 7);
+sum(1,2,7);
+sum(5,6);
