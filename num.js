@@ -1,4 +1,4 @@
-function sum(...number) {
+function sum() {
 	var result = 0;
 	for(var x=0; x<arguments.length; x++) {
 		result += arguments[x];
