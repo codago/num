@@ -1,9 +1,8 @@
-function sum(...args){
+function sum(){
   var total = 0;
-  for(var i=0;i<args.length;i++){
-    total += args[i];
+  for(var i=0;i<arguments.length;i++){
+    total += arguments[i];
   }
-
   return total;
 }
 
